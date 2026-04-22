@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Basavaraj R. Palled – Portfolio</title>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-XXXXX"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ====================== NAV ====================== -->
+<nav id="navbar" class="navbar">
+  <div class="container nav-container">
+    <div class="logo">BR</div>
+
+    <!-- Desktop menu -->
+    <ul class="nav-menu desktop">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#achievements" class="nav-link">Achievements</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+
+    <!-- Mobile toggle -->
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- Mobile menu (hidden by default) -->
+  <ul class="nav-menu mobile">
+    <li><a href="#home" class="nav-link">Home</a></li>
+    <li><a href="#about" class="nav-link">About</a></li>
+    <li><a href="#skills" class="nav-link">Skills</a></li>
+    <li><a href="#projects" class="nav-link">Projects</a></li>
+    <li><a href="#experience" class="nav-link">Experience</a></li>
+    <li><a href="#achievements" class="nav-link">Achievements</a></li>
+    <li><a href="#contact" class="nav-link">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ====================== HERO ====================== -->
+<section id="home" class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-bg right"></div>
+
+  <div class="container hero-content">
+    <div class="avatar bounce"><img src="D:\portpolio\port\My_Photo1.jpg" alt="Description of image" class="round-image"></div>
+    <h1>Basavaraj R Palled</h1>
+    <p class="tagline">Full Stack Developer | Python | Django | React | AI Enthusiast</p>
+    <p class="bio">
+      Motivated and detail-oriented Software Engineer with strong skills in Java, Python,
+      and web development. MCA student at Dr. Ambedkar Institute of Technology, Bengaluru.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="https://linkedin.com/in/basavarajrp" target="_blank" class="btn btn-primary">
+        <i class="fab fa-linkedin-in"></i> LinkedIn
+      </a>
+      <a href="https://github.com/Basavaraj607" target="_blank" class="btn btn-secondary">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a href="mailto:basavarajpalled607@gmail.com" class="btn btn-tertiary">
+        <i class="fas fa-envelope"></i> Email
+      </a>
+      <a href="resume.pdf" download="Basavaraj_Palled_Resume.pdf" class="btn btn-tertiary">
+        <i class="fas fa-download"></i> Resume
+      </a>
+    </div>
+
+    <button class="scroll-down" onclick="scrollToSection('about')">
+      <i class="fas fa-chevron-down"></i>
+    </button>
+  </div>
+</section>
+
+<!-- ====================== ABOUT ====================== -->
+<section id="about" class="section">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <div class="grid about-grid">
+      <div class="about-text">
+        <p>
+          I'm a passionate Full Stack Developer and MCA student with a strong foundation in
+          software development. I specialize in building scalable web applications using
+          modern technologies like Django, React, and Python.
+        </p>
+        <p>
+          With hands-on experience from my internship at Haegl Technologies, I've developed
+          expertise in API development, database design, and responsive UI implementation.
+        </p>
+
+        <div class="info-cards">
+          <div class="info-card">
+            <i class="fas fa-graduation-cap"></i>
+            <div>
+              <strong>Education</strong>
+              <p>MCA – Dr. Ambedkar Institute of Technology, Bengaluru</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <strong>Location</strong>
+              <p>Bengaluru, Karnataka, India</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-right">
+        <div class="profile-card">
+          <div class="profile-avatar">BR</div>
+          <p class="name">Basavaraj R. Palled</p>
+          <p class="role">Full Stack Developer</p>
+        </div>
+
+        <div class="quick-facts">
+          <h3>Quick Facts</h3>
+          <ul>
+            <li>Full Stack Development expertise</li>
+            <li>Proficient in Python, Java, JavaScript</li>
+            <li>Django & React specialist</li>
+            <li>AI & Machine Learning enthusiast</li>
+            <li>Open to internships & opportunities</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== SKILLS ====================== -->
+<section id="skills" class="section bg-light">
+  <div class="container">
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="grid skills-grid">
+
+      <!-- Skill group template -->
+      <div class="skill-card" data-color="blue">
+        <i class="fas fa-code"></i>
+        <h3>Languages</h3>
+        <ul>
+          <li>Python</li>
+          <li>Java</li>
+          <li>C</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+
+      <div class="skill-card" data-color="purple">
+        <i class="fas fa-laptop-code"></i>
+        <h3>Web Development</h3>
+        <ul>
+          <li>Django</li>
+          <li>React</li>
+          <li>HTML/CSS</li>
+          <li>REST APIs</li>
+        </ul>
+      </div>
+
+      <div class="skill-card" data-color="green">
+        <i class="fas fa-database"></i>
+        <h3>Databases</h3>
+        <ul>
+          <li>SQL</li>
+          <li>MySQL</li>
+          <li>PostgreSQL</li>
+        </ul>
+      </div>
+
+      <div class="skill-card" data-color="orange">
+        <i class="fas fa-tools"></i>
+        <h3>Tools & Platforms</h3>
+        <ul>
+          <li>Git</li>
+          <li>VS Code</li>
+          <li>Android Studio</li>
+          <li>Linux</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== PROJECTS ====================== -->
+<section id="projects" class="section">
+  <div class="container">
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="grid project-grid">
+
+      <article class="project-card" data-featured="true">
+        <div class="project-img"><span>🎵</span></div>
+        <div class="project-body">
+          <h3>Music Streaming Service</h3>
+          <p class="desc">
+            A full-featured music streaming platform built with Django and Python,
+            featuring user authentication, playlist management, and audio playback.
+          </p>
+          <div class="tech-tags">
+            <span>Django</span><span>Python</span><span>PostgreSQL</span><span>React</span>
+          </div>
+          <a href="https://github.com/Basavaraj607" target="_blank" class="project-link">
+            View on GitHub <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-img"><span>🎮</span></div>
+        <div class="project-body">
+          <h3>Snake and Apple Game</h3>
+          <p class="desc">
+            Interactive game developed using Python and Pygame with smooth animations,
+            collision detection, and score tracking.
+          </p>
+          <div class="tech-tags">
+            <span>Python</span><span>Pygame</span>
+          </div>
+          <a href="https://github.com/Basavaraj607" target="_blank" class="project-link">
+            View on GitHub <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== EXPERIENCE ====================== -->
+<section id="experience" class="section bg-light">
+  <div class="container">
+    <h2 class="section-title">Experience</h2>
+
+    <div class="exp-card">
+      <div class="exp-header">
+        <div>
+          <h3>Full Stack Developer Intern</h3>
+          <p class="company"><i class="fas fa-briefcase"></i> Haegl Technologies Pvt. Ltd.</p>
+        </div>
+        <span class="period">Apr – Jul 2024</span>
+      </div>
+      <ul class="ach-list">
+        <li>Developed and optimized REST APIs using Django framework</li>
+        <li>Designed responsive UI components with React and Tailwind CSS</li>
+        <li>Integrated PostgreSQL databases with backend services</li>
+        <li>Collaborated with team to deliver 5+ production features</li>
+        <li>Improved API response time by 40% through optimization</li>
+      </ul>
+    </div>
+
+    <h3 class="cert-title">Certifications</h3>
+    <div class="grid cert-grid">
+      <div class="cert-card">
+        <i class="fas fa-award"></i>
+        <div>
+          <strong>IBM Python for Data Science</strong>
+          <p>IBM</p>
+        </div>
+      </div>
+      <div class="cert-card">
+        <i class="fas fa-award"></i>
+        <div>
+          <strong>Accenture Strategy Consulting</strong>
+          <p>Accenture</p>
+        </div>
+      </div>
+      <div class="cert-card">
+        <i class="fas fa-award"></i>
+        <div>
+          <strong>Tata GenAI Analytics</strong>
+          <p>Tata</p>
+        </div>
+      </div>
+      <div class="cert-card">
+        <i class="fas fa-award"></i>
+        <div>
+          <strong>OneRoadmap Python Certification</strong>
+          <p>OneRoadmap</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== ACHIEVEMENTS ====================== -->
+<section id="achievements" class="section">
+  <div class="container">
+    <h2 class="section-title">Achievements & Leadership</h2>
+    <div class="grid ach-grid">
+      <div class="ach-card" data-color="amber">
+        <span>♟️</span>
+        <h3>Chess Championship</h3>
+        <p>2nd Place – University Blue</p>
+      </div>
+      <div class="ach-card" data-color="yellow">
+        <span>🏆</span>
+        <h3>Techno-Treasure Hunt</h3>
+        <p>2nd Prize – Technical Event</p>
+      </div>
+      <div class="ach-card" data-color="green">
+        <span>🏸</span>
+        <h3>Badminton</h3>
+        <p>University Representation</p>
+      </div>
+      <div class="ach-card" data-color="blue">
+        <span>📋</span>
+        <h3>Student Secretary</h3>
+        <p>Karnataka Science College</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== CONTACT ====================== -->
+<section id="contact" class="section contact">
+  <div class="contact-bg"></div>
+  <div class="container">
+    <h2 class="section-title">Get In Touch</h2>
+    <div class="grid contact-grid">
+      <div class="contact-card">
+        <i class="fas fa-envelope"></i>
+        <h3>Email</h3>
+        <a href="mailto:basavarajpalled607@gmail.com">basavarajpalled607@gmail.com</a>
+      </div>
+      <div class="contact-card">
+        <i class="fas fa-phone"></i>
+        <h3>Phone</h3>
+        <a href="tel:+918310674476">+91 8310674476</a>
+      </div>
+      <div class="contact-card">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Location</h3>
+        <p>Bengaluru, Karnataka, India</p>
+      </div>
+    </div>
+
+    <div class="contact-buttons">
+      <a href="https://linkedin.com/in/basavarajrp" target="_blank" class="btn btn-primary">
+        <i class="fab fa-linkedin-in"></i> LinkedIn
+      </a>
+      <a href="https://github.com/Basavaraj607" target="_blank" class="btn btn-secondary">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== FOOTER ====================== -->
+<footer class="footer">
+  <div class="container">
+    <p>© 2025 Basavaraj R. Palled. All rights reserved.</p>
+    <p>Full Stack Developer | MCA Student | AI Enthusiast</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
